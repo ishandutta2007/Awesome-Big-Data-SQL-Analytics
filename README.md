@@ -61,7 +61,7 @@ The sector is **moderately to highly fragmented** rather than winner-take-all: n
 
 ## 🐙 Open-Source GitHub Projects
 
-*Sorted by GitHub Stars_Count (Descending)*
+*Sorted by GitHub_Stars_Count (Descending)*
 
 1. **[ClickHouse](https://github.com/ClickHouse/ClickHouse)** [![GitHub_Stars](https://img.shields.io/github/stars/ClickHouse/ClickHouse?style=social&color=white)](https://github.com/ClickHouse/ClickHouse/stargazers)  
    ⚡ **The columnar OLAP speed champion.** Native C++ real-time analytics database with vectorized query execution. Scales to billions of rows per second for high-throughput operational dashboards, log analytics, and time-series aggregation.
@@ -119,7 +119,7 @@ We welcome community contributions! Follow these steps to submit additions or im
 
 1. 🍴 Fork the repository on GitHub.
 2. 📝 Add or update entries in `README.md` adhering to the table or list schema.
-3. 🔗 Verify all URLs, pricing units, free tier limits, and GitHub Stars_Badges.
+3. 🔗 Verify all URLs, pricing units, free tier limits, and GitHub_Stars_Badges.
 4. 🚀 Submit a Pull Request with a clear, concise summary of the addition.
 
 ---
