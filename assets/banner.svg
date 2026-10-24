@@ -1,0 +1,167 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 420" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradients -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b0f19" />
+      <stop offset="50%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#050811" />
+    </linearGradient>
+
+    <linearGradient id="textGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="50%" stop-color="#818cf8" />
+      <stop offset="100%" stop-color="#c084fc" />
+    </linearGradient>
+
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0284c7" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#9333ea" stop-opacity="0.8" />
+    </linearGradient>
+
+    <radialGradient id="glowCyan" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#06b6d4" stop-opacity="0.35" />
+      <stop offset="100%" stop-color="#06b6d4" stop-opacity="0" />
+    </radialGradient>
+
+    <radialGradient id="glowPurple" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#a855f7" stop-opacity="0.3" />
+      <stop offset="100%" stop-color="#a855f7" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Grid Pattern -->
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#334155" stroke-width="0.75" stroke-opacity="0.3" />
+    </pattern>
+
+    <!-- Filters for Glow -->
+    <filter id="glowFilter" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+
+    <style>
+      @keyframes pulseGlow {
+        0%, 100% { transform: scale(1); opacity: 0.4; }
+        50% { transform: scale(1.15); opacity: 0.7; }
+      }
+      @keyframes floatParticle {
+        0% { transform: translateY(0px) translateX(0px); opacity: 0.3; }
+        50% { transform: translateY(-18px) translateX(10px); opacity: 0.8; }
+        100% { transform: translateY(0px) translateX(0px); opacity: 0.3; }
+      }
+      @keyframes beamMove {
+        0% { stroke-dashoffset: 400; }
+        100% { stroke-dashoffset: 0; }
+      }
+      .glow-orb-1 {
+        animation: pulseGlow 7s ease-in-out infinite;
+        transform-origin: 200px 100px;
+      }
+      .glow-orb-2 {
+        animation: pulseGlow 9s ease-in-out infinite reverse;
+        transform-origin: 1000px 320px;
+      }
+      .p1 { animation: floatParticle 5s ease-in-out infinite; }
+      .p2 { animation: floatParticle 7s ease-in-out infinite 1.5s; }
+      .p3 { animation: floatParticle 6s ease-in-out infinite 3s; }
+      .beam-line {
+        stroke-dasharray: 40, 80;
+        animation: beamMove 12s linear infinite;
+      }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="420" fill="url(#bgGrad)" rx="16" />
+  <rect width="1200" height="420" fill="url(#grid)" rx="16" />
+
+  <!-- Animated Glowing Background Elements -->
+  <circle class="glow-orb-1" cx="220" cy="120" r="180" fill="url(#glowCyan)" />
+  <circle class="glow-orb-2" cx="980" cy="280" r="220" fill="url(#glowPurple)" />
+
+  <!-- Dynamic Circuit / Stream Lines in Background -->
+  <g opacity="0.4">
+    <path class="beam-line" d="M 50,340 C 300,340 400,380 600,380 C 800,380 900,320 1150,320" fill="none" stroke="#38bdf8" stroke-width="2" />
+    <path class="beam-line" d="M 80,80 C 350,80 450,40 650,40 C 850,40 950,110 1120,110" fill="none" stroke="#818cf8" stroke-width="1.5" />
+    <path class="beam-line" d="M 100,200 C 300,230 500,170 700,220 C 900,270 1000,180 1100,200" fill="none" stroke="#c084fc" stroke-width="1.5" />
+  </g>
+
+  <!-- Floating Query / Data Nodes (Background) -->
+  <g opacity="0.6">
+    <circle class="p1" cx="150" cy="260" r="4" fill="#38bdf8" />
+    <circle class="p2" cx="320" cy="70" r="3.5" fill="#818cf8" />
+    <circle class="p3" cx="880" cy="90" r="4.5" fill="#c084fc" />
+    <circle class="p1" cx="1060" cy="230" r="3" fill="#38bdf8" />
+    <circle class="p2" cx="620" cy="370" r="4" fill="#34d399" />
+  </g>
+
+  <!-- Card Border Highlight -->
+  <rect x="2" y="2" width="1196" height="416" fill="none" stroke="url(#textGrad)" stroke-width="1.5" stroke-opacity="0.3" rx="15" />
+
+  <!-- Foreground Content: Strict foreground hierarchy -->
+  <g id="foreground-content">
+    <!-- Category Tag / Badge -->
+    <g transform="translate(600, 75)">
+      <rect x="-140" y="-18" width="280" height="36" rx="18" fill="#1e293b" fill-opacity="0.85" stroke="#38bdf8" stroke-width="1.2" />
+      <text text-anchor="middle" y="5" fill="#38bdf8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" font-weight="700" letter-spacing="2">
+        ⚡ BIG DATA SQL &amp; LAKEHOUSE ECOSYSTEM
+      </text>
+    </g>
+
+    <!-- Main Title -->
+    <text x="600" y="160" text-anchor="middle" fill="url(#textGrad)" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="46" font-weight="900" letter-spacing="-1">
+      Awesome Big Data SQL Analytics
+    </text>
+
+    <!-- Subtitle / Tagline -->
+    <text x="600" y="210" text-anchor="middle" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="18" font-weight="500">
+      Curated Guide to Distributed SQL Engines, Lakehouse Architectures, OLAP Databases &amp; Query Federation
+    </text>
+
+    <!-- Feature Pills / Highlights -->
+    <g transform="translate(600, 275)">
+      <!-- Pill 1: Distributed Engines -->
+      <g transform="translate(-360, 0)">
+        <rect x="-80" y="-16" width="160" height="32" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1" />
+        <text text-anchor="middle" y="5" fill="#e2e8f0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="600">
+          🚀 Query Federation
+        </text>
+      </g>
+      <!-- Pill 2: Lakehouse Formats -->
+      <g transform="translate(-180, 0)">
+        <rect x="-80" y="-16" width="160" height="32" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1" />
+        <text text-anchor="middle" y="5" fill="#e2e8f0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="600">
+          ❄️ Apache Iceberg
+        </text>
+      </g>
+      <!-- Pill 3: High-Performance OLAP -->
+      <g transform="translate(0, 0)">
+        <rect x="-80" y="-16" width="160" height="32" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1" />
+        <text text-anchor="middle" y="5" fill="#e2e8f0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="600">
+          ⚡ Real-time OLAP
+        </text>
+      </g>
+      <!-- Pill 4: In-Process & Serverless -->
+      <g transform="translate(180, 0)">
+        <rect x="-80" y="-16" width="160" height="32" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1" />
+        <text text-anchor="middle" y="5" fill="#e2e8f0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="600">
+          🦆 In-Process SQL
+        </text>
+      </g>
+      <!-- Pill 5: Cloud Data Warehouses -->
+      <g transform="translate(360, 0)">
+        <rect x="-80" y="-16" width="160" height="32" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1" />
+        <text text-anchor="middle" y="5" fill="#e2e8f0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="600">
+          ☁️ Cloud Warehouses
+        </text>
+      </g>
+    </g>
+
+    <!-- Bottom metadata info -->
+    <g transform="translate(600, 345)">
+      <text text-anchor="middle" fill="#64748b" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" font-weight="500">
+        Star-Ranked Open-Source Projects • Transparent SaaS Pricing &amp; Free Tier Limits • 2026 Edition
+      </text>
+    </g>
+  </g>
+</svg>

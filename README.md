@@ -1,54 +1,52 @@
-# Awesome-Big-Data-SQL-Analytics
+# 📊 Awesome Big Data SQL Analytics
 
-# Awesome-Big-Data-SQL-Analytics
+<p align="center">
+  <img src="assets/banner.svg" alt="Awesome Big Data SQL Analytics Banner" width="100%">
+</p>
 
-## Top Big Data SQL Analytics Ecosystem
+<p align="center">
+  <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a><a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Big-Data-SQL-Analytics/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Big-Data-SQL-Analytics?style=social" alt="GitHub Stars" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Big-Data-SQL-Analytics/network/members"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-Big-Data-SQL-Analytics?style=social" alt="GitHub Forks" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Big-Data-SQL-Analytics/issues"><img src="https://img.shields.io/github/issues/ishandutta2007/Awesome-Big-Data-SQL-Analytics?color=red" alt="GitHub Issues" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Big-Data-SQL-Analytics/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-MIT-green.svg" alt="License" /></a>
+  <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
+</p>
 
+---
 
+## 🌟 Top Big Data SQL Analytics Ecosystem
 
 **Curated List of SaaS Products & Open-Source GitHub Projects**  
+*Focused on Distributed Query Engines, Lakehouse Analytics, Vectorized Execution & Self-Hosted SQL Federation*  
 
-*Focused on Distributed Query Engines, Lakehouse Analytics & Self-Hosted SQL Federation*  
+> **Last updated: October 2026**
 
-**Last updated: October 2026**
+A community-driven, SEO-optimized knowledge repository tracking state-of-the-art **Big Data SQL Analytics engines**, **modern cloud data warehouses**, **open data lakehouses**, and **real-time OLAP databases**. Whether querying petabyte-scale data lakes with Apache Iceberg, federating queries across hybrid multi-cloud environments, or embedding vectorized SQL compute in-process, this guide provides factual, verified insights with exact SaaS pricing models and open-source star rankings.
 
+---
 
+## 📑 Table of Contents
 
-This repository tracks notable **SaaS platforms** and **open-source projects** for **Big Data SQL Analytics**. These tools enable organizations to query massive datasets across data lakes, warehouses, and federated sources using SQL—ranging from cloud-native managed warehouses to open-source distributed query engines that run on your own infrastructure.
+- [🌐 Sector Overview & Market Dynamics](#-sector-overview--market-dynamics)
+- [☁️ SaaS & Hosted Platforms](#️-saas--hosted-platforms)
+- [🐙 Open-Source GitHub Projects](#-open-source-github-projects)
+- [🛠️ How to Contribute](#️-how-to-contribute)
+- [💖 Support & Sponsorship](#-support--sponsorship)
+- [📈 Star History](#-star-history)
+- [⚠️ Disclaimer](#️-disclaimer)
 
+---
 
+## 🌐 Sector Overview & Market Dynamics
 
-**Examples** include Snowflake, Google BigQuery, Amazon Redshift, Databricks SQL, Starburst Galaxy, Dremio, Trino, ClickHouse, and Apache Spark (the category leaders).
+The global big data SQL analytics and lakehouse market is estimated at **$11.66 billion in 2026** and projected to reach **$28.04 billion by 2034** (CAGR ~11.59%). 
 
+The sector is **moderately to highly fragmented** rather than winner-take-all: no single vendor holds a monopoly because modern enterprise architectures routinely combine hyperscaler managed warehouses (BigQuery, Redshift), dedicated cloud data platforms (Snowflake, Databricks), and open-source distributed engines (Trino, ClickHouse, DuckDB) across multi-cloud environments. Compute has decoupled from storage around open table formats like **Apache Iceberg**, preventing total vendor lock-in.
 
+---
 
-**Open-source emphasis**: This section is heavily expanded with every major active project for self-hosting, avoiding per-query or per-credit SaaS fees, and controlling the analytics pipeline. The open-source landscape is anchored by **Trino** (the distributed SQL federation standard), **ClickHouse** (the columnar OLAP speed champion), **Apache Spark** (the unified batch/stream/SQL engine), and **DuckDB** (the in-process analytical database), with **Apache Iceberg** providing the open table format layer that connects them all.
-
-
-
-Contributions welcome! Open a PR to add/update entries. Keep descriptions factual and link to official sites.
-
-
-
-## Table of Contents
-
-- [Sector Overview & Market Dynamics](#sector-overview--market-dynamics)
-
-- [SaaS/Hosted Platforms](#saas-hosted-platforms)
-
-- [Open-Source GitHub Projects](#open-source-github-projects)
-
-- [How to Contribute](#how-to-contribute)
-
-- [Disclaimer](#disclaimer)
-
-
-
-## Sector Overview & Market Dynamics
-
-The global big data SQL analytics and lakehouse market is estimated at **$11.66 billion in 2026** and projected to reach **$28.04 billion by 2034** (CAGR ~11.59%). The sector is **moderately to highly fragmented** rather than winner-take-all: no single vendor holds a monopoly because enterprise architectures routinely combine hyperscaler managed warehouses (BigQuery, Redshift), dedicated cloud data platforms (Snowflake, Databricks), and open-source distributed engines (Trino, ClickHouse, DuckDB) across multi-cloud environments. Compute has decoupled from storage around open table formats like Apache Iceberg, preventing total vendor lock-in.
-
-## SaaS/Hosted Platforms
+## ☁️ SaaS & Hosted Platforms
 
 | Product | Description | Pricing | Free Tier Limit | Company Size (Revenue/Valuation) |
 | :--- | :--- | :--- | :--- | :--- |
@@ -59,98 +57,94 @@ The global big data SQL analytics and lakehouse market is estimated at **$11.66 
 | **[Snowflake](https://www.snowflake.com/)** | Cloud data warehouse with decoupled compute/storage and multi-cluster scaling. | **Standard Edition**: **$2.00/credit** (~$226/mo for 1 Medium warehouse running 8 hrs/day + 2 TB storage). Enterprise: **$3.00/credit**. | **30-day free trial** with **$400 in free usage credits**. Free trial only (no permanent free tier). | **Public (NYSE: SNOW)**: **$4.68B annual revenue** (FY2026). |
 | **[Starburst Galaxy](https://www.starburst.io/)** | Managed Trino service for lakehouse analytics and federation. | **Pro**: **$0.50/credit**. **Enterprise**: **$0.75/credit**. **Mission-Critical**: **$1.00/credit**. | **Permanent Free Tier**: **3 concurrent clusters**, standard execution mode, free forever; plus **30-day trial with $500 compute credits**. | **Private**: **$3.35B valuation** (Series D), **$100M+ ARR**. |
 
-## Open-Source GitHub Projects
+---
 
+## 🐙 Open-Source GitHub Projects
 
+*Sorted by GitHub Star Count (Descending)*
 
-- **[Apache Spark](https://github.com/apache/spark)** [![GitHub Stars](https://img.shields.io/github/stars/apache/spark?style=social&color=white)](https://github.com/apache/spark/stargazers)  
+1. **[ClickHouse](https://github.com/ClickHouse/ClickHouse)** [![GitHub Stars](https://img.shields.io/github/stars/ClickHouse/ClickHouse?style=social&color=white)](https://github.com/ClickHouse/ClickHouse/stargazers)  
+   ⚡ **The columnar OLAP speed champion.** Native C++ real-time analytics database with vectorized query execution. Scales to billions of rows per second for high-throughput operational dashboards, log analytics, and time-series aggregation.
 
-  **The unified distributed analytics engine.** ~40k+ stars. Handles batch, streaming, machine learning, and graph processing with SQL via Spark SQL. **Strengths**: the most mature distributed data processing framework; massive ecosystem; runs on Hadoop, Kubernetes, and standalone clusters. **Trade-offs**: JVM-based with higher memory overhead than native engines; benchmark data shows native/vectorized engines like DuckDB and ClickHouse achieve order-of-magnitude lower runtimes on single-node workloads. Best for organizations already invested in the Spark ecosystem and needing unified batch/stream/ML pipelines.
+2. **[Apache Spark](https://github.com/apache/spark)** [![GitHub Stars](https://img.shields.io/github/stars/apache/spark?style=social&color=white)](https://github.com/apache/spark/stargazers)  
+   🚀 **The unified distributed analytics powerhouse.** Massive ecosystem combining large-scale batch ETL, Spark SQL, streaming workloads, and ML pipelines running across Kubernetes or standalone clusters.
 
+3. **[DuckDB](https://github.com/duckdb/duckdb)** [![GitHub Stars](https://img.shields.io/github/stars/duckdb/duckdb?style=social&color=white)](https://github.com/duckdb/duckdb/stargazers)  
+   🦆 **The in-process analytical database (SQLite for Analytics).** Zero-dependency columnar engine with vectorized SIMD execution. Seamlessly queries Parquet, CSV, Arrow, and Iceberg directly in Python, R, Node, and browser environments.
 
+4. **[Apache Flink](https://github.com/apache/flink)** [![GitHub Stars](https://img.shields.io/github/stars/apache/flink?style=social&color=white)](https://github.com/apache/flink/stargazers)  
+   🌊 **Stateful distributed stream processing engine.** Powers mission-critical event-driven architectures with continuous Flink SQL, sub-second latency, and exactly-once processing guarantees across large-scale streams.
 
-- **[Trino](https://github.com/trinodb/trino)** [![GitHub Stars](https://img.shields.io/github/stars/trinodb/trino?style=social&color=white)](https://github.com/trinodb/trino/stargazers)  
+5. **[Cube](https://github.com/cube-js/cube)** [![GitHub Stars](https://img.shields.io/github/stars/cube-js/cube?style=social&color=white)](https://github.com/cube-js/cube/stargazers)  
+   🧊 **The Universal Semantic Layer & SQL API.** Centralizes metrics, access control, and caching across cloud data warehouses and SQL query engines to power BI tools, LLMs, and embedded data applications.
 
-  **The distributed SQL federation standard.** ~11k+ stars. Queries data across heterogeneous sources (Hive, Iceberg, PostgreSQL, Kafka, S3) without data movement. **Strengths**: massively parallel processing architecture, cost-based optimizer, and broad connector ecosystem. **Trade-offs**: JVM-based with higher latency than native engines; benchmark shows Velox-accelerated Presto outperforms Trino on single-node TPC-H. Best for federated analytics across disparate data sources without consolidation.
+6. **[Apache Arrow](https://github.com/apache/arrow)** [![GitHub Stars](https://img.shields.io/github/stars/apache/arrow?style=social&color=white)](https://github.com/apache/arrow/stargazers)  
+   🏹 **The cross-language in-memory columnar standard.** Foundation for next-generation zero-copy analytical execution, high-throughput tabular inter-process communication (IPC), and Arrow Flight SQL data interchange.
 
+7. **[Presto](https://github.com/prestodb/presto)** [![GitHub Stars](https://img.shields.io/github/stars/prestodb/presto?style=social&color=white)](https://github.com/prestodb/presto/stargazers)  
+   🔍 **Distributed SQL query engine for big data.** Originally developed at Meta; massively parallel processing (MPP) architecture running interactive analytics and ad-hoc SQL over exabyte-scale data lakes with Velox native acceleration.
 
+8. **[Apache Doris](https://github.com/apache/doris)** [![GitHub Stars](https://img.shields.io/github/stars/apache/doris?style=social&color=white)](https://github.com/apache/doris/stargazers)  
+   ⚡ **High-performance real-time analytical database.** MPP architecture with columnar storage, inverted index support, and native vectorized execution for high-concurrency sub-second reporting and ad-hoc exploration.
 
-- **[ClickHouse](https://github.com/ClickHouse/ClickHouse)** [![GitHub Stars](https://img.shields.io/github/stars/ClickHouse/ClickHouse?style=social&color=white)](https://github.com/ClickHouse/ClickHouse/stargazers)  
+9. **[Apache Druid](https://github.com/apache/druid)** [![GitHub Stars](https://img.shields.io/github/stars/apache/druid?style=social&color=white)](https://github.com/apache/druid/stargazers)  
+   ⏱️ **Real-time analytics database for streaming events.** Optimized for low-latency operational telemetry, user-facing analytics applications, and high-volume event ingestion from Apache Kafka.
 
-  **The columnar OLAP speed champion.** ~40k+ stars. Native C++ engine with vectorized execution, designed for real-time analytics on massive datasets. **Strengths**: near-linear scaling on single-node benchmarks; among the fastest engines for TPC-H workloads. Best for real-time dashboards, log analytics, and high-throughput OLAP where raw query speed matters most.
+10. **[Trino](https://github.com/trinodb/trino)** [![GitHub Stars](https://img.shields.io/github/stars/trinodb/trino?style=social&color=white)](https://github.com/trinodb/trino/stargazers)  
+    🌐 **The distributed SQL federation standard.** Massively parallel query engine that queries data across Iceberg, Delta Lake, PostgreSQL, MySQL, and cloud object stores (S3/GCS/Azure) without data migration.
 
+11. **[StarRocks](https://github.com/StarRocks/starrocks)** [![GitHub Stars](https://img.shields.io/github/stars/StarRocks/starrocks?style=social&color=white)](https://github.com/StarRocks/starrocks/stargazers)  
+    ⭐ **Next-generation sub-second lakehouse engine.** Fully vectorized C++ query engine featuring cost-based optimization (CBO) and automated materialized views for real-time dashboards and federated lake queries.
 
+12. **[Apache DataFusion](https://github.com/apache/datafusion)** [![GitHub Stars](https://img.shields.io/github/stars/apache/datafusion?style=social&color=white)](https://github.com/apache/datafusion/stargazers)  
+    🦀 **Extensible Rust-native SQL query engine.** Vectorized in-memory compute powered by Apache Arrow. Used as the core query execution engine for modern distributed and embedded databases.
 
-- **[DuckDB](https://github.com/duckdb/duckdb)** [![GitHub Stars](https://img.shields.io/github/stars/duckdb/duckdb?style=social&color=white)](https://github.com/duckdb/duckdb/stargazers)  
+13. **[Apache Iceberg](https://github.com/apache/iceberg)** [![GitHub Stars](https://img.shields.io/github/stars/apache/iceberg?style=social&color=white)](https://github.com/apache/iceberg/stargazers)  
+    ❄️ **The open lakehouse table format standard.** High-performance ACID table format enabling safe concurrent writes, partition evolution, time travel, and cross-engine portability across Spark, Trino, Flink, and Snowflake.
 
-  **The in-process analytical database.** **~36,510 stars** . Embedded OLAP engine with no server to manage—runs inside your application like SQLite for analytics. **Strengths**: native/vectorized execution delivers order-of-magnitude better performance than JVM engines on single-node workloads. Best for local analytics, data science workflows, and lightweight ETL without cluster infrastructure.
+14. **[Delta Lake](https://github.com/delta-io/delta)** [![GitHub Stars](https://img.shields.io/github/stars/delta-io/delta?style=social&color=white)](https://github.com/delta-io/delta/stargazers)  
+    🔺 **Open-source storage framework for Lakehouse.** Provides ACID transactions, scalable metadata handling, and unified batch/streaming data processing on cloud object storage.
 
+15. **[Materialize](https://github.com/MaterializeInc/materialize)** [![GitHub Stars](https://img.shields.io/github/stars/MaterializeInc/materialize?style=social&color=white)](https://github.com/MaterializeInc/materialize/stargazers)  
+    🔄 **The streaming SQL database.** Continuously ingests live events and PostgreSQL/MySQL change data capture (CDC), maintaining complex materialized views with sub-second latency and standard Postgres SQL compatibility.
 
-
-- **[Apache Iceberg](https://github.com/apache/iceberg)** [![GitHub Stars](https://img.shields.io/github/stars/apache/iceberg?style=social&color=white)](https://github.com/apache/iceberg/stargazers)  
-
-  **The open table format standard.** **~9,138 stars** . Provides transactional consistency and schema evolution for huge analytic datasets in cloud storage, with a REST catalog interface enabling interoperability across compute engines. **Strengths**: lets Trino, Spark, Flink, and Snowflake query the same tables—decoupling storage from compute. Best as the foundational table format layer for any lakehouse architecture.
-
-
-
-- **[Materialize](https://github.com/MaterializeInc/materialize)** [![GitHub Stars](https://img.shields.io/github/stars/MaterializeInc/materialize?style=social&color=white)](https://github.com/MaterializeInc/materialize/stargazers)  
-
-  **The streaming SQL database.** ~6k+ stars. Continuously ingests live data from Kafka, Redpanda, PostgreSQL, and MySQL, incrementally maintaining materialized views. **Strengths**: PostgreSQL-compatible wire protocol means existing BI tools work unchanged; real-time analytics without batch delays. Best for operational analytics requiring sub-second freshness.
-
-
-
-### Additional Strong Open-Source Options
-
-
-
-- **Apache Doris** — Real-time analytical database with vectorized execution. Best for high-concurrency dashboard workloads.
-
-- **StarRocks** — Analytical database with cost-based optimizer and lakehouse federation. Best for unified lakehouse analytics without Trino's JVM overhead.
-
-- **Apache Druid** — Real-time analytics database for event-driven data. Best for user-facing analytics with sub-second latency.
-
-
-
-## How to Contribute
-
-
-
-1. Fork the repo.
-
-2. Add/edit entries in `README.md` (follow existing format).
-
-3. Include: name, link, 1–2 sentence description, and whether it's SaaS or open-source.
-
-4. Submit PR with a short explanation.
-
-
-
-Star the repo if you find it useful!
-
-
-
-## Disclaimer
-
-
-
-- This is a **community-curated** list — not exhaustive and not an endorsement.
-
-- **SaaS pricing is workload-dependent and often misleading at list rates**: Snowflake's $226/mo example is for light usage; enterprise scenarios reach $25,000–$40,000/mo. Redshift Serverless at $0.375/RPU-hour looks cheap until you model sustained query volume.
-
-- **Free tiers are for evaluation, not production**: Snowflake offers $400 trial credits; Redshift offers $300 for 90 days; Databricks offers 14 days. Only Starburst Galaxy offers a **permanent free tier** with 3 clusters.
-
-- **Benchmark performance depends on architecture**: native/vectorized engines (ClickHouse, DuckDB) dramatically outperform JVM-based engines (Spark, Trino) on single-node workloads, but distributed engines scale horizontally when data exceeds one machine.
-
-- **Iceberg is the quiet standard**: regardless of which query engine you choose, adopting Apache Iceberg for table storage ensures you can switch engines later without rewriting data pipelines.
-
-- **Dremio was acquired by SAP in May 2026**; its standalone roadmap may change under SAP ownership .
-
-
+16. **[Apache Polaris](https://github.com/apache/polaris)** [![GitHub Stars](https://img.shields.io/github/stars/apache/polaris?style=social&color=white)](https://github.com/apache/polaris/stargazers)  
+    🧭 **Open source catalog for Apache Iceberg.** Interoperable, multi-engine catalog standard providing cross-cloud centralized access control, table discovery, and governance without vendor lock-in.
 
 ---
 
+## 🛠️ How to Contribute
 
+We welcome community contributions! Follow these steps to submit additions or improvements:
 
-**Made for data engineers, analytics architects, and organizations building scalable SQL analytics pipelines.**  
+1. 🍴 Fork the repository on GitHub.
+2. 📝 Add or update entries in `README.md` adhering to the table or list schema.
+3. 🔗 Verify all URLs, pricing units, free tier limits, and GitHub star badges.
+4. 🚀 Submit a Pull Request with a clear, concise summary of the addition.
 
-Let's make big data SQL analytics more open, performant, and vendor-agnostic.
+---
+
+## 💖 Support & Sponsorship
+
+If you find this repository helpful for your data engineering, analytics architecture, or lakehouse projects:
+
+- ⭐ **Star this repository** to show your support and help others discover it!
+- 🍴 **Fork and share** with colleagues and the broader data community.
+- ☕ **Buy me a coffee / Sponsor**: Support ongoing maintenance and curation via the [GitHub Sponsors Dashboard](https://github.com/sponsors/ishandutta2007).
+
+Your support keeps this guide updated with the latest industry shifts, benchmarks, and project releases! 🙌
+
+---
+
+## 📈 Star History
+
+[![Star History Chart](https://star-history.dera.page/svg?repos=ishandutta2007/Awesome-Big-Data-SQL-Analytics&type=date&legend=top-left)](https://star-history.dera.page/#ishandutta2007/Awesome-Big-Data-SQL-Analytics&type=date&legend=top-left)
+
+---
+
+## ⚠️ Disclaimer
+
+- This is a **community-curated guide** intended for architectural reference—not commercial endorsement.
+- **SaaS pricing varies significantly by actual consumption**: Listed rates reflect standard starting tiers; production enterprise workloads with high data concurrency, memory requirements, and egress can scale substantially.
+- **Free tier evaluations**: Verify current vendor terms prior to enterprise sizing; serverless and credit-based trials expire after allocated usage limits or stated calendar durations.
+- **Architectural trade-offs**: Native C++/Rust vectorized engines (ClickHouse, DuckDB, DataFusion) deliver unmatched performance on single-node or low-latency analytics; MPP distributed architectures (Spark, Trino, Presto) excel when horizontally scaling across clusters.
