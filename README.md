@@ -46,33 +46,18 @@ Contributions welcome! Open a PR to add/update entries. Keep descriptions factua
 
 ## Sector Overview & Market Dynamics
 
-
-
-The **big data analytics** market is estimated at **$11.66 billion in 2026**, projected to reach **$28.04 billion by 2034** at an **11.59% CAGR** . The sector is **highly fragmented**: no single vendor dominates, and organizations routinely mix managed warehouses (Snowflake, BigQuery, Redshift), lakehouse platforms (Databricks), and open-source engines (Trino, Spark, DuckDB) depending on workload. The real consolidation is happening at the **data format layer**, where Apache Iceberg is emerging as the de facto standard that lets any engine query the same data—decoupling storage from compute and making vendor lock-in increasingly difficult. This is **not a winner-take-all market**; the coexistence of proprietary warehouses and open table formats means competition is sustained across price, performance, and deployment flexibility.
-
-
+The global big data SQL analytics and lakehouse market is estimated at **$11.66 billion in 2026** and projected to reach **$28.04 billion by 2034** (CAGR ~11.59%). The sector is **moderately to highly fragmented** rather than winner-take-all: no single vendor holds a monopoly because enterprise architectures routinely combine hyperscaler managed warehouses (BigQuery, Redshift), dedicated cloud data platforms (Snowflake, Databricks), and open-source distributed engines (Trino, ClickHouse, DuckDB) across multi-cloud environments. Compute has decoupled from storage around open table formats like Apache Iceberg, preventing total vendor lock-in.
 
 ## SaaS/Hosted Platforms
 
-
-
 | Product | Description | Pricing | Free Tier Limit | Company Size (Revenue/Valuation) |
-
 | :--- | :--- | :--- | :--- | :--- |
-
-| **[Databricks SQL](https://www.databricks.com/)** | Lakehouse SQL warehouse built on Spark and Delta Lake. | **SQL Warehousing**: **$0.22/DBU** . Total costs including cloud infrastructure typically **2–3x DBU charges**. | **14-day free trial** with limited credits. No permanent free tier. | **Private**; **$7B+ annual revenue run-rate** (2026), **$190B valuation** . |
-
-| **[Snowflake](https://www.snowflake.com/)** | Cloud data warehouse with separated compute/storage and multi-cluster scaling. | **Standard (1 Medium WH, 8hrs/day, 2TB)**: ~$226/mo ($180 compute + $46 storage). Enterprise scenarios: $4,950/mo. | **30-day trial with $400 credits**. No permanent free tier. | **Public**; **$4.68B** FY2026 revenue (ending Jan 2026) . |
-
-| **[Google BigQuery](https://cloud.google.com/bigquery)** | Serverless data warehouse with on-demand or slot-based pricing. | **On-demand**: **$6.25/TiB scanned**; slot-based capacity available for predictable workloads. | **1 TiB scanned free per month** on on-demand pricing. Sandbox mode for experimentation without billing. | Part of **Google Cloud**; revenue not separately disclosed. |
-
-| **[Amazon Redshift](https://aws.amazon.com/redshift/)** | Provisioned or Serverless data warehouse on AWS. | **Serverless**: **$0.375/RPU-hour** (US East). **RA3.4xlarge**: $3.26/node-hour. | **$300 Serverless credits** valid for **90 days**. No permanent free tier. | Part of **AWS** (Amazon); ~$100B+ annual revenue. |
-
-| **[Starburst Galaxy](https://www.starburst.io/)** | Managed Trino service for lakehouse analytics and federation. | **Pro**: **$0.50/credit**. **Enterprise**: $0.75/credit. **Mission-Critical**: $1.00/credit. | **Free tier**: 3 clusters, standard execution mode, free forever. **30-day trial**: $500 in compute credits. | **Private**; **$100M+ ARR** (2025), **$3.35B valuation** (2022) . |
-
-| **[Dremio Cloud](https://www.dremio.com/)** | Lakehouse query engine with semantic layer and Arrow-based acceleration. | Quote-based; enterprise-tier. | **Free trial** available. No permanent free tier. | **Acquired by SAP** (May 2026); last valuation **$2B** (2022), **$50–100M revenue** . |
-
-
+| **[Amazon Redshift](https://aws.amazon.com/redshift/)** | Provisioned or Serverless data warehouse on AWS. | **Serverless**: **$0.375/RPU-hour** (US East). **RA3.4xlarge**: $3.26/node-hour. | **$300 Serverless credits** valid for **90 days**. Free trial only (no permanent free tier). | **AWS (Amazon)**: **$128.7B annual revenue** (2025). |
+| **[Google BigQuery](https://cloud.google.com/bigquery)** | Serverless data warehouse with on-demand or slot-based capacity. | **On-demand**: **$6.25 per TiB scanned** (Standard Edition: $0.04/slot-hour). | **Permanent Free Tier**: **1 TiB scanned/month** + **10 GB active storage/month**; Sandbox mode available with no credit card required. | **Google Cloud (Alphabet)**: **$70B+ annual revenue run-rate** (2025–2026). |
+| **[Databricks SQL](https://www.databricks.com/)** | Lakehouse SQL warehouse built on Spark and Delta Lake. | **SQL Warehousing**: **$0.22/DBU** (Serverless SQL Warehouse: **$0.70/DBU**). Total compute cost ~2–3x DBU with cloud infra. | **14-day free trial** with full platform capabilities. Free trial only (no permanent free tier). | **Private**: **$190B valuation**, **$7B+ annual revenue run-rate** (2026). |
+| **[Dremio Cloud](https://www.dremio.com/)** | Lakehouse query engine with semantic layer and Arrow-based acceleration. | **Standard Pay-As-You-Go**: **$0.20 per DCU** (Dremio Compute Unit) per hour (e.g. Small engine = 64 DCUs/hr = $12.80/hr). | **Permanent Free Tier (Standard)**: Up to **10 users**, capped engine sizes, up to 200 tables & 1,000 views. No time limit. | **SAP (Acquired)**: Parent revenue **€36.8B (~$40B)**; Dremio peak standalone valuation was **$2B** (~$50M–$66M ARR). |
+| **[Snowflake](https://www.snowflake.com/)** | Cloud data warehouse with decoupled compute/storage and multi-cluster scaling. | **Standard Edition**: **$2.00/credit** (~$226/mo for 1 Medium warehouse running 8 hrs/day + 2 TB storage). Enterprise: **$3.00/credit**. | **30-day free trial** with **$400 in free usage credits**. Free trial only (no permanent free tier). | **Public (NYSE: SNOW)**: **$4.68B annual revenue** (FY2026). |
+| **[Starburst Galaxy](https://www.starburst.io/)** | Managed Trino service for lakehouse analytics and federation. | **Pro**: **$0.50/credit**. **Enterprise**: **$0.75/credit**. **Mission-Critical**: **$1.00/credit**. | **Permanent Free Tier**: **3 concurrent clusters**, standard execution mode, free forever; plus **30-day trial with $500 compute credits**. | **Private**: **$3.35B valuation** (Series D), **$100M+ ARR**. |
 
 ## Open-Source GitHub Projects
 
